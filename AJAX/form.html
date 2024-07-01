@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <style>
+        .error { color: red; }
+    </style>
+    <script type="text/javascript">
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+            var confirmpassword = document.myform.password2.value;
+            var email = document.myform.email.value;
+
+            // Username validation
+            if (name == null || name.trim() == "") {
+                alert("Name can't be blank");
+                return false;
+            }
+            
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+
+            // Retype password validation
+            if (password != confirmpassword) {
+                alert("Passwords must be the same!");
+                return false;
+            }
+
+            // Email validation
+            var emailErr = true;
+            if (email.trim() == "") {
+                printError("emailErr", "Please enter your email address");
+                return false;
+            } else {
+                // Regular expression for basic email validation
+                var regex = /^\S+@\S+\.\S+$/;
+                if (regex.test(email) === false) {
+                    printError("emailErr", "Please enter a valid email address");
+                    return false;
+                } else {
+                    printError("emailErr", "");
+                    emailErr = false;
+                }
+            }
+
+            return true;
+        }
+
+        function printError(elementId, hintMsg) {
+            document.getElementById(elementId).innerHTML = hintMsg;
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Validation Example</h1>
+    <form name="myform" method="post" onsubmit="return validateform()">
+        Username: <input type="text" name="name"><br/>
+        Password: <input type="password" name="password"><br/>
+        Re-enter Password: <input type="password" name="password2"><br/>
+        Email: <input type="text" name="email"><br/>
+        <div class="error" id="emailErr"></div>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

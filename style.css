@@ -1,0 +1,82 @@
+p{
+    color:blue;
+}
+button{
+    color:darkslateblue;
+}
+body{
+    background-color:coral;
+}
+#head1{
+    color:aqua;
+}
+.myClass{
+    color:teal;
+}
+a:link{
+    color:green;
+}
+a:visited{
+    color:aqua;
+}
+a:hover{
+    color:wheat;
+}
+a:active{
+    color:chartreuse;
+}
+#myclass{
+    background-color: blue;
+}
+
+.hey{
+    text-align: center;
+    color: blanchedalmond;
+    text-decoration: overline;
+}
+#heade{
+    text-align: center;
+    color: aqua;
+    text-decoration: dotted;
+}
+#headf{
+    text-align: center;
+    color: aqua;
+    text-decoration:line-through;
+}
+
+#headg{
+    text-align: center;
+    color: aqua;
+    text-decoration:blue wavy underline;
+}
+#h1{
+    font-weight: 100;
+}
+
+#h2{
+    font-weight: 300;
+}
+
+#h3{
+    font-weight: 600;
+}
+
+#h4{
+    font-weight: 900;
+}
+/*font weight lies from 100-900*/
+#p1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;  /*fall back mechanism ,we apply 3 font family if first one is not available then second one is applied*/
+    color: chartreuse;
+}
+#one{
+    line-height: 10px;
+    font-size: 25px;
+}
+#two{
+    line-height: 50px;
+    font-size: 40px;
+    text-transform: capitalize;
+}

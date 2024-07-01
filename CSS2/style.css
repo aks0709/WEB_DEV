@@ -1,0 +1,66 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-color: hsl(0, 0%, 0%);
+    border-width: 5px;
+    border-style:solid;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}  
+h1{
+    height: 100px;
+    width:150px;
+    background-color: aqua;
+    border-color: brown;
+    border-style: dashed;
+    border-width: 8px; 
+    text-align: center;  /*heading doesnt go in center according to page it goes center according to box*/
+}
+#d{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-color: hsl(0, 0%, 0%);
+    border-width: 5px;
+    border-style:solid;
+    border-radius: 15%;
+}
+#d1{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+    text-align: center;
+    color: chartreuse;
+    border-color: hsl(0, 0%, 0%);
+    border-width: 5px;
+    border-style:solid;
+    border-radius: 50%;  /*when hight and width is same and we set border radius as 50% then it will form circle*/
+}
+#one{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 25px;
+    /*display: inline;*/  /*this will display div in inline manner but we cant apply padding margin width height*/
+    display: inline-block;/*we can apply margin padding height width*/
+}
+#box1{
+height: 100px;
+width: 100px;
+background-color: blueviolet;
+font-size: 10px;
+}
+#box2{
+height: 50px;
+/*width: 33%;*/  /*it is 33% of parent width*/
+background-color: yellow;
+font-size: 2em;
+width: 5rem;/* rem means relative to root*/
+}
